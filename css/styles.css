@@ -1,0 +1,165 @@
+:root {
+
+    /* colors */
+    --color-orange: #FF8400;
+    --color-greenish:#7DB9B6;
+    --color-dark-blue: #2e475d;
+
+    /* fonts */
+    --ff-primary: 'Lexend Deca', sans-serif;
+    /* font-weight */
+    --fw-thin: 100;
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+/* Box-sizing */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+/* Removing default margins */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* allowing for percentage-based heights */
+html,
+body {
+    height: 100%;
+}
+/* typography scuffs - line-height - improved text rendering */
+body {
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased
+}
+h1,
+h2,
+h3 {
+    line-height: 1.0;
+}
+/* text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+/* media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+/* Removing built-in Typography*/
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+body {
+    font-family: var(--ff-primary);
+}
+.container {
+    padding-bottom: 1em;
+    background-color: #C0DBEA;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.card-heading {
+    background: #2e475d;
+}
+
+.heading-title {
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+.benefits {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    background-color: #fff;
+    margin: 2rem 1rem;
+    padding: 2rem 1rem;
+    box-shadow: 5px 5px 1px 3px var(--color-orange);
+    border-radius: 10px;
+}
+.benefits2 {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    background-color: #fff;
+    margin: 2rem 1em;
+    padding: 2rem 1rem;
+    box-shadow: 5px 5px 1px 3px var(--color-greenish);
+    border-radius: 10px;
+}
+.benefits3 {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    background-color: #fff;
+    margin: 2rem 1rem;
+    padding: 2rem 1rem;
+    box-shadow: 5px 5px 1px 3px var(--color-dark-blue);
+    border-radius: 10px;
+}
+
+
+.benefits-title1 {
+    color: var(--color-orange);
+    font-size: 20px;
+    font-weight: var(--fw-light);
+    padding-bottom: 0.5rem;
+}
+.benefits-title2 {
+    color: var(--color-greenish);
+    font-size: 20px;
+    font-weight: var(--fw-light);
+    padding-bottom: 0.5rem;
+}
+.benefits-title3 {
+    color: var(--color-dark-blue);
+    font-size: 20px;
+    font-weight: var(--fw-light);
+    padding-bottom: 0.5rem;
+}
+
+.benefits-text {
+    font-size: 12px;
+}
+
+picture img {
+    width: 80%;
+    border-radius: 280px;
+}
+
+.benefit-2 .benefits-title {
+    color: #2e475d;
+}
+
+@media (min-width:768px) {
+    .container {
+        margin: 0 15rem;
+    }
+}
+
+
+
+
+
